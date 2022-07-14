@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+
+.Logo {
+  max-width: 40px;
+  max-height: 80px;
+}
+
+.brand-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+.navigation {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background-color: #020202;
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  font-family: "Arima", cursive;
+  z-index: 50;
+}
+
+.navigation-menu {
+  margin-left: auto;
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+  padding-top: 20px;
+}
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #8ef6e4;
+
+  --s: 0.1em; /* the thickness of the line */
+  --c: #ff44cc; /* the color */
+
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+
+.navigation-menu li a:hover {
+  color: #ff44cc;
+  --_p: 100%;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #ff44cc;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+.hamburger:hover {
+  background-color: #8ef6e4;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ff44cc;
+    border-top: 1px solid black;
+  }
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+  .navigation-menu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: #8ef6e4;
+  }
+  .navigation-menu ul {
+    display: none;
+  }
+
+  .navigation-menu.expanded ul {
+    display: block;
+    padding-top: 0px;
+  }
+}
