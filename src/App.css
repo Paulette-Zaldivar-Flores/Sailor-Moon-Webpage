@@ -20,18 +20,22 @@ container {
 }
 
 .background {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-
-  /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
-
-  /* Set up positioning */
+  height: 100vh;
+  z-index: -1; /* set the background to the back without hiding images */
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 60%;
+}
+
+.title {
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .heading {

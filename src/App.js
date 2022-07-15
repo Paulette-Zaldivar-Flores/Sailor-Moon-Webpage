@@ -1,12 +1,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarComp from "./Components/NavbarComp";
-import Background from "./Images/Background.jpeg";
+import Background from "./Images/Background.png";
 import Creator from "./Components/Creator";
 import React, { useState, useEffect } from "react";
 import "animate.css";
 import { ClipLoader } from "react-spinners";
 import Sailor from "./Components/Sailor";
+import Title from "./Images/title.png";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,12 +28,12 @@ function App() {
 
           <div className="container">
             <header className="Sailor-Moon" />
-            <img src={Background} alt="background" className="background" />
+
             <main>
-              <h1 className="heading animate__animated animate__fadeInUp">
-                {" "}
-                Sailor Moon
-              </h1>
+              <img src={Background} alt="background" className="background" />
+              <div className="title">
+                <img src={Title} alt="title" />
+              </div>
               <Sailor />
 
               <h1 className="heading animate__animated animate__fadeInUp">
