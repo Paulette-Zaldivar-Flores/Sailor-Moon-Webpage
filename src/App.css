@@ -36,11 +36,13 @@ container {
 
 .Creator {
   font-family: "Arima", cursive;
+  font-size: 45px;
   margin-top: 25px;
   text-align: center;
-  -webkit-text-fill-color: #ff10f0;
+
+  -webkit-text-fill-color: #000000;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #ff10f0;
 }
 
 .loader-container {

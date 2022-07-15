@@ -17,7 +17,7 @@ function Creator() {
           />
         </Col>
         <Col>
-          <Card.Body>
+          <Card.Body className>
             <Card.Title>Naoko Takeuchi</Card.Title>
             <Card.Text>
               Naoko Takeuchi is a manga writer and artist who is best known for
