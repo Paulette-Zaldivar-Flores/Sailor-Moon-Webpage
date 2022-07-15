@@ -6,6 +6,7 @@ import Creator from "./Components/Creator";
 import React, { useState, useEffect } from "react";
 import "animate.css";
 import { ClipLoader } from "react-spinners";
+import Sailor from "./Components/Sailor";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,7 +29,13 @@ function App() {
             <header className="Sailor-Moon" />
             <img src={Background} alt="background" className="background" />
             <main>
-              <h1 className="Creator animate__animated animate__fadeInUp">
+              <h1 className="heading animate__animated animate__fadeInUp">
+                {" "}
+                Sailor Moon
+              </h1>
+              <Sailor />
+
+              <h1 className="heading animate__animated animate__fadeInUp">
                 {" "}
                 The Creator and Artist
               </h1>
