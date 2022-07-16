@@ -3,11 +3,11 @@ import "./Creator.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Row, Col } from "react-bootstrap";
-import Naoko from "../Images/naoko-t.png";
+import Naoko from "../Images/naoko.png";
 
 function Creator() {
   return (
-    <Card className="m-3 shadow card-naoko">
+    <Card className="m-3 shadow card-naoko animate__animated animate__fadeIn ">
       <Row className="no-gutters">
         <Col sm={4} lg={3}>
           <Card.Img

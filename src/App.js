@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 3000);
   });
   return (
     <div className="App">
@@ -32,14 +32,15 @@ function App() {
             <main>
               <img src={Background} alt="background" className="background" />
               <div className="title">
-                <img src={Title} alt="title" />
+                <img
+                  src={Title}
+                  alt="title"
+                  className="animate__animated animate__fadeInUp"
+                />
               </div>
               <Sailor />
 
-              <h1 className="heading animate__animated animate__fadeInUp">
-                {" "}
-                The Creator and Artist
-              </h1>
+              <h1 className="heading"> The Creator and Artist</h1>
               <Creator />
             </main>
           </div>
