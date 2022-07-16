@@ -1,15 +1,15 @@
 .card-naoko {
-  font-size: 14px;
+  font-size: 16px;
   border-color: rgba(134, 222, 236, 0.73) !important ;
   border-width: medium !important;
   color: rgb(14, 5, 22);
-  background-color: rgba(255, 192, 203, 0.461);
+  background-color: rgba(255, 192, 203, 0.816);
 }
 
 .card-img {
   padding: 0px;
-  max-width: 210px;
-  height: 290px;
+  max-width: 600px;
+  height: 400px;
   text-align: center;
   display: block;
   border-radius: 2px;
@@ -25,5 +25,8 @@
     max-width: 450px;
     height: 550px;
     padding: 0px;
+  }
+  .card-naoko {
+    font-size: 14px;
   }
 }
