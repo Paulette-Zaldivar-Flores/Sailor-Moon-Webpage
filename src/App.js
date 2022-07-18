@@ -8,6 +8,7 @@ import "animate.css";
 import { ClipLoader } from "react-spinners";
 import Sailor from "./Components/Sailor";
 import Title from "./Images/title.png";
+import Carousel from "./Components/Carousel";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,9 @@ function App() {
 
               <h1 className="heading"> The Creator and Artist</h1>
               <Creator />
+
+              <h1 className="heading"> Sailor Scouts </h1>
+              <Carousel />
             </main>
           </div>
         </header>
