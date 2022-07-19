@@ -2,6 +2,7 @@
   font-size: 16px;
   color: rgb(246, 245, 247);
   background-color: rgba(245, 245, 220, 0);
+  opacity: 100%;
 }
 
 .card-img {
@@ -11,7 +12,6 @@
   text-align: center;
   display: block;
   border-radius: 2px;
-  box-shadow: 5px;
 }
 
 @media (max-width: 700px) {

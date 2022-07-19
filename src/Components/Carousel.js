@@ -22,8 +22,13 @@ class App extends Component {
   render() {
     return (
       <div className="container carousel-wrapper">
-        <Carousel autoPlay="true" onChange={this.onChange} className="carousel">
-          <div className="scouts">
+        <Carousel
+          autoPlay="true"
+          onChange={this.onChange}
+          showThumbs={false}
+          className="carousel"
+        >
+          <div className="sailor-scouts">
             <img className="card-img-top" src={Sailor} alt="sailor-scouts" />
             <div className="card">
               <div className="card-body">
@@ -62,8 +67,8 @@ class App extends Component {
                   Ami Mizuno (水野 亜美, Mizuno Ami, called Amy Anderson in the
                   original English dub) is a quiet but intelligent
                   fourteen-year-old bookworm in Usagi's class with a rumored IQ
-                  of 300.[12]: Act 2  She can transform into Sailor Mercury, the
-                  Guardian of Water and Wisdom.
+                  of 300. She can transform into Sailor Mercury, the Guardian of
+                  Water and Wisdom.
                 </p>
               </div>
             </div>
@@ -79,8 +84,8 @@ class App extends Component {
                   (English: shrine maiden). Because of her work as a Shinto
                   priestess, Rei has limited precognition and can dispel or
                   nullify evil using special ofuda scrolls, even in her civilian
-                  form.[6]: 165–166  She transforms into Sailor Mars, the
-                  Guardian of Fire and Passion.
+                  form. She transforms into Sailor Mars, the Guardian of Fire
+                  and Passion.
                 </p>
               </div>
             </div>
@@ -110,10 +115,9 @@ class App extends Component {
                   Minako Aino (愛野 美奈子, Aino Minako, called Mina Aino in the
                   original English dub) is a fourteen-year-old perky dreamer.
                   Minako first appears as the main protagonist of Codename:
-                  Sailor V.[17][18]: Act 9  She has a companion cat called
-                  Artemis who works alongside Luna in guiding the Sailor
-                  Guardians. Minako transforms into Sailor Venus, the Guardian
-                  of Love and Beauty.
+                  Sailor V. She has a companion cat called Artemis who works
+                  alongside Luna in guiding the Sailor Guardians. Minako
+                  transforms into Sailor Venus, the Guardian of Love and Beauty.
                 </p>
               </div>
             </div>
@@ -143,11 +147,10 @@ class App extends Component {
                   Mamoru Chiba (地場 衛, Chiba Mamoru, called Darien Shields in
                   the original English dub) is a student who is older than
                   Usagi. When he was a young child, Mamoru was in a car accident
-                  that killed his parents and erased his memories.[8] He and
-                  Usagi share a special psychic connection, and he can sense
-                  when she is in danger. This inspires him to take on the guise
-                  of Tuxedo Mask and fight alongside the Sailor Guardians when
-                  needed.
+                  that killed his parents and erased his memories. He and Usagi
+                  share a special psychic connection, and he can sense when she
+                  is in danger. This inspires him to take on the guise of Tuxedo
+                  Mask and fight alongside the Sailor Guardians when needed.
                 </p>
               </div>
             </div>
