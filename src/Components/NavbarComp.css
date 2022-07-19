@@ -43,10 +43,10 @@
   text-decoration: none;
   display: block;
   width: 100%;
-  color: #8ef6e4;
+  color: #ff91b8;
 
   --s: 0.1em; /* the thickness of the line */
-  --c: #ff44cc; /* the color */
+  --c: #8ef6e4; /* the color */
 
   padding-bottom: var(--s);
   background: linear-gradient(90deg, var(--c) 50%, #000 0)
@@ -58,7 +58,7 @@
 }
 
 .navigation-menu li a:hover {
-  color: #ff44cc;
+  color: #8ef6e4;
   --_p: 100%;
 }
 
@@ -68,7 +68,7 @@
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #ff44cc;
+  background-color: #ff91b8;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -92,7 +92,7 @@
     left: 0;
     flex-direction: column;
     width: 100%;
-    background-color: #ff44cc;
+    background-color: #ff91b8;
     border-top: 1px solid black;
   }
   .navigation-menu li {
@@ -103,7 +103,13 @@
     color: black;
     width: 100%;
     padding: 1.5rem 0;
+    transition: none;
   }
+
+  .navigation-menu li a:hover {
+    color: #000;
+  }
+
   .navigation-menu li:hover {
     background-color: #8ef6e4;
   }

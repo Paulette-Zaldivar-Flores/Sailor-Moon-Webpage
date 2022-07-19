@@ -7,7 +7,7 @@ import Naoko from "../Images/naoko.png";
 
 function Creator() {
   return (
-    <Card className="m-3 shadow card-naoko animate__animated animate__fadeIn ">
+    <Card className="m-3  card-naoko animate__animated animate__fadeIn ">
       <Row className="no-gutters">
         <Col sm={4} lg={3}>
           <Card.Img
@@ -17,9 +17,9 @@ function Creator() {
           />
         </Col>
         <Col>
-          <Card.Body className>
+          <Card.Body>
             <Card.Title>Naoko Takeuchi</Card.Title>
-            <Card.Text>
+            <Card.Text className="text-style">
               Naoko Takeuchi is a manga writer and artist who is best known for
               being the creator of Sailor Moon and Codename: Sailor V and
               several other mangas such as Prism Time, Chocolate Christmas,
